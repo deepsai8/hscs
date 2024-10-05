@@ -1,0 +1,1797 @@
+
+<!doctype html>
+<html lang="hi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A Space to learn Computer Science in byte-sized lessons for high-school students">
+      
+      
+        <meta name="author" content="Anshul Yadav">
+      
+      
+        <link rel="canonical" href="https://deepsai8.github.io/hscs/hi/chapters/chapter01/">
+      
+      
+        <link rel="prev" href="../contents/">
+      
+      
+        <link rel="next" href="../chapter02/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>1. Computer System - High School Computer Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Google Sans";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-1FM49NNNNZ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-1FM49NNNNZ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-1FM49NNNNZ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          विषय पर बढ़ें
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="शीर्षक">
+    <a href="../../" title="High School Computer Science" class="md-header__button md-logo" aria-label="High School Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            High School Computer Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Computer System
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="भाषा चुनें">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../chapters/chapter01/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="hi" class="md-select__link">
+              Hindi
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="खोज" placeholder="खोज" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="खोजें">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="शेयर करें" aria-label="शेयर करें" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="हटा दें" aria-label="हटा दें" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            खोज शुरू करें
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/deepsai8/hscs" title="रिपॉजिटरी पर जाएं" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="नैविगेशन" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="High School Computer Science" class="md-nav__button md-logo" aria-label="High School Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    High School Computer Science
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/deepsai8/hscs" title="रिपॉजिटरी पर जाएं" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Computer System
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Computer System
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="विषय - सूची">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      विषय - सूची
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      परिचय
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="परिचय">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-central-processing-unit-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Central Processing Unit (CPU)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-inputoutput-devices-io-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Input/Output Devices (I/O Devices):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. कंप्यूटर का विकास:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. कंप्यूटर का विकास:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1940-1956-vacuum-tubes" class="md-nav__link">
+    <span class="md-ellipsis">
+      पहली पीढ़ी (1940-1956): Vacuum Tubes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1956-1963-transistors" class="md-nav__link">
+    <span class="md-ellipsis">
+      दूसरी पीढ़ी (1956-1963): Transistors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1964-1971-integrated-circuits-ics" class="md-nav__link">
+    <span class="md-ellipsis">
+      तीसरी पीढ़ी (1964-1971): Integrated Circuits (ICs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1971-microprocessors" class="md-nav__link">
+    <span class="md-ellipsis">
+      चौथी पीढ़ी (1971-वर्तमान): Microprocessors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artificial-intelligence-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      पाँचवीं पीढ़ी (वर्तमान और भविष्य): Artificial Intelligence (AI)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      कंप्यूटर मेमोरी
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="कंप्यूटर मेमोरी">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      मेमोरी की इकाइयाँ:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      मेमोरी के प्रकार:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      माइक्रोप्रोसेसर
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="माइक्रोप्रोसेसर">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      माइक्रोप्रोसेसर का विकास
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      माइक्रोप्रोसेसर की विशेषताएँ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      सॉफ़्टवेयर: उद्देश्य और प्रकार
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="सॉफ़्टवेयर: उद्देश्य और प्रकार">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      सिस्टम सॉफ़्टवेयर
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      एप्लिकेशन सॉफ़्टवेयर
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      लैंग्वेज ट्रांसलेटर्स
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      डिवाइस ड्राइवर्स
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      प्रोग्रामिंग भाषाओं का वर्गीकरण
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="प्रोग्रामिंग भाषाओं का वर्गीकरण">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      हाई-लेवल लैंग्वेज
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      मशीन लैंग्वेज
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os" class="md-nav__link">
+    <span class="md-ellipsis">
+      ऑपरेटिंग सिस्टम (OS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ऑपरेटिंग सिस्टम (OS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      ऑपरेटिंग सिस्टम की आवश्यकता
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      ऑपरेटिंग सिस्टम के कार्य
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      महत्वपूर्ण शब्दावली:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="महत्वपूर्ण शब्दावली:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      मज़ेदार उदाहरण:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      प्रश्नावली:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      उत्तर:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Encoding Schemes and Number Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Emerging Trends
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Problem Solving
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Getting Started with Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5a. Flow of Control and Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05b/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5b. Strings and Lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05c/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5c. Tuples and Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Societal Impacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Suggested Practical Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qbank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Question Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qbank_ans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Answers to Question Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="विषय - सूची">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      विषय - सूची
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      परिचय
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="परिचय">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-central-processing-unit-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Central Processing Unit (CPU)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-inputoutput-devices-io-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Input/Output Devices (I/O Devices):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. कंप्यूटर का विकास:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. कंप्यूटर का विकास:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1940-1956-vacuum-tubes" class="md-nav__link">
+    <span class="md-ellipsis">
+      पहली पीढ़ी (1940-1956): Vacuum Tubes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1956-1963-transistors" class="md-nav__link">
+    <span class="md-ellipsis">
+      दूसरी पीढ़ी (1956-1963): Transistors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1964-1971-integrated-circuits-ics" class="md-nav__link">
+    <span class="md-ellipsis">
+      तीसरी पीढ़ी (1964-1971): Integrated Circuits (ICs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1971-microprocessors" class="md-nav__link">
+    <span class="md-ellipsis">
+      चौथी पीढ़ी (1971-वर्तमान): Microprocessors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artificial-intelligence-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      पाँचवीं पीढ़ी (वर्तमान और भविष्य): Artificial Intelligence (AI)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      कंप्यूटर मेमोरी
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="कंप्यूटर मेमोरी">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      मेमोरी की इकाइयाँ:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      मेमोरी के प्रकार:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      माइक्रोप्रोसेसर
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="माइक्रोप्रोसेसर">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      माइक्रोप्रोसेसर का विकास
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      माइक्रोप्रोसेसर की विशेषताएँ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      सॉफ़्टवेयर: उद्देश्य और प्रकार
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="सॉफ़्टवेयर: उद्देश्य और प्रकार">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      सिस्टम सॉफ़्टवेयर
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      एप्लिकेशन सॉफ़्टवेयर
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      लैंग्वेज ट्रांसलेटर्स
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      डिवाइस ड्राइवर्स
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      प्रोग्रामिंग भाषाओं का वर्गीकरण
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="प्रोग्रामिंग भाषाओं का वर्गीकरण">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      हाई-लेवल लैंग्वेज
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      मशीन लैंग्वेज
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os" class="md-nav__link">
+    <span class="md-ellipsis">
+      ऑपरेटिंग सिस्टम (OS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ऑपरेटिंग सिस्टम (OS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      ऑपरेटिंग सिस्टम की आवश्यकता
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      ऑपरेटिंग सिस्टम के कार्य
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      महत्वपूर्ण शब्दावली:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="महत्वपूर्ण शब्दावली:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      मज़ेदार उदाहरण:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      प्रश्नावली:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      उत्तर:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="1"><strong>यूनिट 1: कंप्यूटर प्रणाली</strong></h1>
+<hr/>
+<h2 id="_1"><strong>परिचय</strong></h2>
+<p>आज की डिजिटल दुनिया में, कंप्यूटर हमारे दैनिक जीवन का एक अभिन्न हिस्सा बन गए हैं, चाहे वह स्कूल हो, काम हो, मनोरंजन हो या संचार। लेकिन कंप्यूटर वास्तव में क्या है और यह कैसे काम करता है? इस अध्याय में, हम एक कंप्यूटर सिस्टम के आवश्यक घटकों, इसके द्वारा उपयोग की जाने वाली मेमोरी के प्रकार, सॉफ्टवेयर की भूमिका, और प्रारंभिक मशीनों से लेकर आज की उन्नत प्रणालियों तक कंप्यूटर के विकास की जांच करेंगे। हम यह भी देखेंगे कि कंप्यूटर डेटा को कैसे प्रोसेस करते हैं, उनसे संवाद करने के लिए हम कौन सी भाषाएँ उपयोग करते हैं, और ऑपरेटिंग सिस्टम पूरे सिस्टम को कैसे प्रबंधित करता है।</p>
+<hr/>
+<h3 id="1-central-processing-unit-cpu"><strong>1. Central Processing Unit (CPU)</strong></h3>
+<ul>
+<li>
+<p><strong>Central Processing Unit (CPU)</strong> कंप्यूटर का हृदय है, जिसे अक्सर मशीन का "मस्तिष्क" कहा जाता है। यह गणनाएँ करता है और कंप्यूटर प्रोग्राम के कार्य करने के लिए आवश्यक निर्देशों का निष्पादन करता है। इसे उस बॉस के रूप में सोचें जो कंप्यूटर के अंदर हो रही हर चीज को निर्देशित करता है।</p>
+</li>
+<li>
+<p><strong>Control Unit (CU):</strong> CPU का वह हिस्सा जो निर्देशों की व्याख्या करता है और कंप्यूटर के अन्य घटकों के संचालन का निर्देशन करता है।</p>
+</li>
+<li>
+<p><strong>Arithmetic Logic Unit (ALU):</strong> यह घटक सभी अंकगणितीय (जोड़, घटाव, आदि) और तार्किक (जैसे कि अधिक, कम) कार्यों को करता है।</p>
+</li>
+</ul>
+<hr/>
+<h3 id="2-inputoutput-devices-io-devices"><strong>2. Input/Output Devices (I/O Devices):</strong></h3>
+<ul>
+<li><strong>Input Devices:</strong> ये हमें कंप्यूटर के साथ संवाद करने की अनुमति देते हैं और इसे डेटा या निर्देश प्रदान करते हैं। इसके उदाहरण हैं:</li>
+<li><strong>Keyboard:</strong> टेक्स्ट इनपुट करने के लिए।</li>
+<li>
+<p><strong>Mouse:</strong> पॉइंट और क्लिक करने के लिए, जिससे उपयोगकर्ता कंप्यूटर के ग्राफिकल यूजर इंटरफेस के साथ इंटरैक्ट कर सकते हैं।</p>
+</li>
+<li>
+<p><strong>Output Devices:</strong> ये कंप्यूटर के प्रोसेस के परिणाम दिखाते हैं। सामान्य उदाहरण हैं:</p>
+</li>
+<li><strong>Monitor:</strong> विज़ुअल आउटपुट जैसे छवियों और टेक्स्ट को प्रदर्शित करता है।</li>
+<li><strong>Printer:</strong> दस्तावेज़ों की भौतिक कॉपी तैयार करता है।</li>
+</ul>
+<hr/>
+<h3 id="3"><strong>3. कंप्यूटर का विकास:</strong></h3>
+<p>कंप्यूटरों का विकास कई शताब्दियों में फैला हुआ है। शुरुआती यांत्रिक उपकरणों से लेकर आज की उच्च तकनीक प्रणालियों तक, कंप्यूटरों के आकार, गति और क्षमताओं में जबरदस्त परिवर्तन हुए हैं। कंप्यूटरों के विकास को <strong>पाँच पीढ़ियों</strong> में विभाजित किया जा सकता है:</p>
+<h4 id="1940-1956-vacuum-tubes"><strong>पहली पीढ़ी (1940-1956): Vacuum Tubes</strong></h4>
+<ul>
+<li><strong>तकनीक:</strong> पहली पीढ़ी के कंप्यूटरों ने डेटा को प्रोसेस और स्टोर करने के लिए Vacuum Tubes का उपयोग किया। ये ट्यूब बड़े, नाजुक और बहुत अधिक ऊर्जा का उपभोग करते थे।</li>
+<li><strong>आकार और विशेषताएं:</strong> ये कंप्यूटर विशाल होते थे, पूरे कमरों को घेरते थे। ये बहुत गर्मी उत्पन्न करते थे और अक्सर खराब हो जाते थे।</li>
+<li><strong>उदाहरण:</strong> <ul>
+<li><strong>ENIAC (Electronic Numerical Integrator and Computer):</strong> प्रारंभिक सामान्य-उद्देश्य वाले कंप्यूटरों में से एक, जिसका उपयोग गणना के लिए किया गया।  </li>
+<li><strong>UNIVAC (Universal Automatic Computer):</strong> वाणिज्यिक रूप से बेचा जाने वाला पहला कंप्यूटर।  </li>
+</ul>
+</li>
+<li><strong>प्रोग्रामिंग भाषा:</strong> मशीन भाषा का उपयोग किया जाता था, जिसमें कंप्यूटर से संवाद करने के लिए बाइनरी कोड (0 और 1) होते थे।</li>
+<li><strong>मुख्य विशेषताएं:</strong> धीमी गति, सीमित प्रोसेसिंग क्षमताएं, बहुत महंगा और मुख्य रूप से वैज्ञानिक और सैन्य उद्देश्यों के लिए उपयोग किया जाता था।</li>
+</ul>
+<h4 id="1956-1963-transistors"><strong>दूसरी पीढ़ी (1956-1963): Transistors</strong></h4>
+<ul>
+<li><strong>तकनीक:</strong> Vacuum Tubes को <strong>Transistors</strong> द्वारा प्रतिस्थापित किया गया, जो छोटे, तेज़, अधिक ऊर्जा-कुशल और अधिक विश्वसनीय थे।</li>
+<li><strong>आकार और विशेषताएं:</strong> कंप्यूटर छोटे, सस्ते और कम ऊर्जा-खपत वाले हो गए, हालांकि आज की तुलना में फिर भी काफी बड़े थे।</li>
+<li><strong>उदाहरण:</strong><ul>
+<li><strong>IBM 7094:</strong> व्यापार डेटा प्रोसेसिंग के लिए उपयोग किया जाता था।  </li>
+<li><strong>CDC 1604:</strong> प्रारंभिक नियंत्रण प्रणालियों के लिए डिज़ाइन किए गए कंप्यूटरों में से एक।  </li>
+</ul>
+</li>
+<li><strong>प्रोग्रामिंग भाषा:</strong> असेंबली भाषा का परिचय दिया गया, जो मशीन भाषा की तुलना में प्रोग्राम लिखना आसान बनाती थी।</li>
+<li><strong>मुख्य विशेषताएं:</strong> तेज प्रोसेसिंग, कम गर्मी उत्पादन, और वाणिज्यिक और व्यावसायिक उपयोग के लिए अधिक व्यावहारिक।</li>
+</ul>
+<h4 id="1964-1971-integrated-circuits-ics"><strong>तीसरी पीढ़ी (1964-1971): Integrated Circuits (ICs)</strong></h4>
+<ul>
+<li><strong>तकनीक:</strong> <strong>Integrated Circuits (ICs)</strong> का आविष्कार, जिसमें एक चिप पर कई Transistors को एकीकृत किया गया, ने कंप्यूटिंग में क्रांति ला दी।</li>
+<li><strong>आकार और विशेषताएं:</strong> कंप्यूटर बहुत छोटे, तेज, अधिक विश्वसनीय और सस्ते हो गए। अब वे व्यवसाय और वाणिज्यिक उपयोग के लिए भी उपलब्ध हो गए।</li>
+<li><strong>उदाहरण:</strong><ul>
+<li><strong>IBM 360 Series:</strong> इस पीढ़ी में सबसे लोकप्रिय और व्यापक रूप से उपयोग की जाने वाली कंप्यूटर श्रृंखलाओं में से एक।</li>
+<li><strong>PDP-8:</strong> छोटे, अधिक सस्ते कंप्यूटर, जिनका उपयोग विश्वविद्यालयों और अनुसंधान केंद्रों द्वारा किया जाता था।</li>
+</ul>
+</li>
+<li><strong>प्रोग्रामिंग भाषा:</strong> उच्च-स्तरीय प्रोग्रामिंग भाषाएँ जैसे FORTRAN और COBOL विकसित की गईं।</li>
+<li><strong>मुख्य विशेषताएं:</strong> बढ़ी हुई प्रोसेसिंग शक्ति, अधिक सस्ती, और सरकारी और अनुसंधान से परे कई उद्योगों में उपयोग की जाने लगीं।</li>
+</ul>
+<h4 id="1971-microprocessors"><strong>चौथी पीढ़ी (1971-वर्तमान): Microprocessors</strong></h4>
+<ul>
+<li><strong>तकनीक:</strong> इस पीढ़ी को <strong>Microprocessors</strong> के विकास द्वारा परिभाषित किया गया, जिसने CPU को एक एकल चिप पर एकीकृत किया। इससे कंप्यूटर अधिक सस्ते और सुलभ हो गए।</li>
+<li><strong>आकार और विशेषताएं:</strong> कंप्यूटर इतने छोटे हो गए कि उन्हें डेस्क पर या घर में फिट किया जा सके। व्यक्तिगत कंप्यूटर (PC) क्रांति शुरू हुई।</li>
+<li><strong>उदाहरण:</strong><ul>
+<li><strong>Intel 4004:</strong> पहला व्यावसायिक रूप से उपलब्ध Microprocessor, जिसने माइक्रोप्रोसेसर क्रांति की शुरुआत की।</li>
+<li><strong>IBM PC:</strong> व्यक्तिगत कंप्यूटर को लोकप्रिय बनाया, जिससे यह औसत उपभोक्ता के लिए सुलभ हो गया।</li>
+</ul>
+</li>
+<li><strong>प्रोग्रामिंग भाषा:</strong> उच्च-स्तरीय भाषाएँ जैसे C और C++ व्यापक रूप से उपयोग में आईं।</li>
+<li><strong>मुख्य विशेषताएं:</strong> व्यक्तिगत कंप्यूटरों का बड़े पैमाने पर उत्पादन, ग्राफिकल यूजर इंटरफेस (GUIs) की शुरुआत, और गति और स्टोरेज में जबरदस्त वृद्धि।</li>
+</ul>
+<h4 id="artificial-intelligence-ai"><strong>पाँचवीं पीढ़ी (वर्तमान और भविष्य): Artificial Intelligence (AI)</strong></h4>
+<ul>
+<li><strong>तकनीक:</strong> पाँचवीं पीढ़ी का फोकस <strong>Artificial Intelligence (AI)</strong> और <strong>Quantum Computing</strong> पर है। अब कंप्यूटर AI का उपयोग करके मानव बुद्धिमत्ता और निर्णय लेने का अनुकरण कर रहे हैं।</li>
+<li><strong>आकार और विशेषताएं:</strong> कंप्यूटरों का आकार बेहद छोटा हो गया है (जैसे स्मार्टफोन), जबकि प्रोसेसिंग शक्ति और स्टोरेज में भारी वृद्धि हुई है। Quantum Computers, हालाँकि अभी प्रयोगात्मक हैं, ऐसे समस्याओं को हल करने की क्षमता दिखा रहे हैं जो पारंपरिक कंप्यूटरों की क्षमता से परे हैं।</li>
+<li><strong>उदाहरण:</strong><ul>
+<li><strong>IBM Watson:</strong> एक AI सिस्टम जो प्राकृतिक भाषा प्रश्नों को समझने और उत्तर देने में सक्षम है।</li>
+<li><strong>Quantum Computers:</strong> हालाँकि अभी विकास में हैं, Quantum Computers अविश्वसनीय गति से जटिल समस्याओं को हल करने की क्षमता रखते हैं।</li>
+</ul>
+</li>
+<li><strong>मुख्य विशेषताएं:</strong> मशीन लर्निंग, न्यूरल नेटवर्क और प्राकृतिक भाषा प्रसंस्करण कंप्यूटिंग के भविष्य को आकार दे रहे हैं। Internet of Things (IoT) के माध्यम से उपकरण आपस में जुड़े हुए हैं, और Cloud Computing का उदय डेटा स्टोरेज और प्रोसेसिंग के तरीकों को बदल रहा है।</li>
+</ul>
+<p><strong>कंप्यूटरों का विकास:</strong>
+- <strong>यांत्रिक से डिजिटल तक:</strong> पहले कंप्यूटर यांत्रिक थे, जिनमें गियर और लीवर का उपयोग किया जाता था (जैसे कि चार्ल्स बैबेज का <strong>Analytical Engine</strong>)। समय के साथ, कंप्यूटर डिजिटल बन गए, जिनमें इलेक्ट्रॉनिक घटकों का उपयोग किया गया जैसे कि Vacuum Tubes, Transistors, और Integrated Circuits।
+- <strong>छोटे, तेज, होशियार:</strong> जैसे-जैसे तकनीक विकसित हुई, कंप्यूटर छोटे और तेज हो गए। आज के कंप्यूटर न केवल जटिल गणनाएँ कर सकते हैं बल्कि डेटा की विशाल मात्रा को भी स्टोर कर सकते हैं, और मानव बुद्धिमत्ता का अनुकरण करने के लिए AI का उपयोग कर सकते हैं।</p>
+<hr/>
+<h2 id="_2"><strong>कंप्यूटर मेमोरी</strong></h2>
+<p>कंप्यूटर में मेमोरी उन घटकों को संदर्भित करती है जो डेटा संग्रहीत करते हैं। यहाँ इसका विस्तृत विवरण है:</p>
+<h3 id="_3"><strong>मेमोरी की इकाइयाँ:</strong></h3>
+<ul>
+<li><strong>बिट (b):</strong> कंप्यूटर में सबसे छोटी डेटा इकाई, जो एक बाइनरी मान (0 या 1) का प्रतिनिधित्व करती है।</li>
+<li><strong>बाइट (B):</strong> 8 बिट्स का संग्रह, जो आमतौर पर एक अक्षर या संख्या जैसी एक वर्ण का प्रतिनिधित्व करता है।</li>
+<li>बड़ी मेमोरी इकाइयों में शामिल हैं:
+    <strong>किलोबाइट (KB):</strong> 1,024 बाइट्स<br/>
+<strong>मेगाबाइट (MB):</strong> 1,024 KB<br/>
+<strong>गीगाबाइट (GB):</strong> 1,024 MB<br/>
+<strong>टेराबाइट (TB):</strong> 1,024 GB  </li>
+</ul>
+<h3 id="_4"><strong>मेमोरी के प्रकार:</strong></h3>
+<ol>
+<li>
+<p><strong>प्राथमिक मेमोरी (मुख्य मेमोरी):</strong>
+<strong>RAM (Random Access Memory):</strong> अस्थायी स्टोरेज जिसका उपयोग CPU द्वारा उस डेटा को संग्रहीत करने के लिए किया जाता है जिसे सक्रिय रूप से उपयोग किया जा रहा हो या संसाधित किया जा रहा हो। यह वोलाटाइल होती है, अर्थात यह बिजली बंद होने पर मिट जाती है।
+    <strong>ROM (Read-Only Memory):</strong> स्थायी स्टोरेज जिसमें सिस्टम को चालू करने और हार्डवेयर कार्यों के लिए महत्वपूर्ण निर्देश होते हैं। RAM के विपरीत, यह नॉन-वोलाटाइल होती है।</p>
+</li>
+<li>
+<p><strong>कैश मेमोरी:</strong>
+    CPU के पास स्थित एक विशेष प्रकार की उच्च गति वाली मेमोरी। यह अक्सर एक्सेस किए गए डेटा को संग्रहीत करती है ताकि प्रोसेसिंग तेज़ हो सके। कैश मेमोरी RAM से तेज़ होती है लेकिन आकार में छोटी होती है।</p>
+</li>
+<li>
+<p><strong>सेकेंडरी मेमोरी (बाहरी स्टोरेज):</strong>
+    लंबी अवधि के लिए डेटा संग्रहीत करने के लिए नॉन-वोलाटाइल मेमोरी। इसके उदाहरणों में हार्ड ड्राइव (HDDs), सॉलिड-स्टेट ड्राइव्स (SSDs), ऑप्टिकल डिस्क (CDs/DVDs), और USB फ्लैश ड्राइव्स शामिल हैं।</p>
+</li>
+</ol>
+<p><strong>मज़ेदार तथ्य:</strong>
+प्राथमिक मेमोरी को अपने कंप्यूटर की "वर्किंग मेमोरी" के रूप में सोचें। यह आपके मस्तिष्क की अल्पकालिक स्मृति की तरह होती है। इसमें एक बार में कुछ ही चीज़ें रखी जा सकती हैं (सीमित स्थान), लेकिन यह बहुत तेज़ होती है। सेकेंडरी मेमोरी अधिक लंबी अवधि के लिए डेटा संग्रहीत करने के लिए होती है, लेकिन इसे एक्सेस करने में अधिक समय लगता है।</p>
+<hr/>
+<h2 id="_5"><strong>माइक्रोप्रोसेसर</strong></h2>
+<h3 id="_6"><strong>माइक्रोप्रोसेसर का विकास</strong></h3>
+<p>माइक्रोप्रोसेसर एक छोटा लेकिन शक्तिशाली घटक है जिसने CPU के कार्यों को एक ही चिप में एकीकृत करके कंप्यूटिंग में क्रांति ला दी। 1940 के दशक में ENIAC जैसे शुरुआती कंप्यूटरों ने डेटा प्रोसेस करने के लिए हजारों वैक्यूम ट्यूब्स का उपयोग किया था, जो कमरे के आकार की मशीनें थीं। ये मशीनें धीमी, ऊर्जा-खपत वाली, और केवल सरल कार्य कर सकती थीं।</p>
+<p>1971 में, Intel ने पहला माइक्रोप्रोसेसर <strong>Intel 4004</strong> विकसित किया, जो डेटा और निर्देशों को एक ही चिप पर प्रोसेस कर सकता था, जो एक नाखून के आकार का था! इसने कंप्यूटर को छोटा, तेज और सस्ता बनाने में क्रांति ला दी। समय के साथ, माइक्रोप्रोसेसरों का विकास हुआ:</p>
+<ul>
+<li><strong>1970s-1980s:</strong> प्रारंभिक माइक्रोप्रोसेसर जैसे कि <strong>Intel 8080</strong> (जो शुरुआती PCs में उपयोग हुआ) बुनियादी कार्य संभाल सकते थे। उनकी गति और मेमोरी सीमित थी।  </li>
+<li><strong>1990s:</strong> <strong>Pentium प्रोसेसरों</strong> के उदय ने गति, मल्टीटास्किंग, और ग्राफिकल प्रदर्शन में महत्वपूर्ण सुधार किए, जिससे अधिक जटिल अनुप्रयोग संभव हुए और व्यक्तिगत कंप्यूटरों की क्रांति शुरू हुई।  </li>
+<li><strong>2000 और उसके बाद:</strong> आधुनिक माइक्रोप्रोसेसर, जैसे कि <strong>Intel Core i7</strong> या <strong>AMD Ryzen</strong>, प्रति सेकंड अरबों निर्देशों को संभालने में सक्षम होते हैं, मल्टीटास्किंग के लिए कई कोर होते हैं, और इन्हें न केवल कंप्यूटरों में, बल्कि स्मार्टफोन, कारों और घरेलू उपकरणों में भी पाया जा सकता है!</li>
+</ul>
+<p>प्रत्येक पीढ़ी के माइक्रोप्रोसेसर अधिक कुशल, तेज, और अधिक बहुमुखी हो गए हैं, जिससे आज के उपकरण पहले से कहीं अधिक शक्तिशाली हो गए हैं।</p>
+<h3 id="_7"><strong>माइक्रोप्रोसेसर की विशेषताएँ</strong></h3>
+<ol>
+<li>
+<p><strong>स्पीड (गीगाहर्ट्ज़ या GHz में मापी जाती है):</strong> माइक्रोप्रोसेसर की स्पीड यह बताती है कि वह प्रति सेकंड कितने चक्र निष्पादित कर सकता है, जिसे गीगाहर्ट्ज़ (GHz) में मापा जाता है। 3 GHz पर चलने वाला माइक्रोप्रोसेसर प्रति सेकंड 3 अरब चक्र निष्पादित कर सकता है। तेज प्रोसेसर कंप्यूटरों को तेजी से अनुप्रयोग चलाने और अधिक जटिल कार्य संभालने की अनुमति देते हैं।</p>
+</li>
+<li>
+<p><strong>मल्टीटास्किंग के लिए कई कोर:</strong> आधुनिक माइक्रोप्रोसेसर अक्सर कई कोर के साथ आते हैं, जिससे वे एक साथ कई कार्य कर सकते हैं। प्रत्येक कोर एक अलग प्रोसेसर की तरह काम करता है। उदाहरण के लिए, <strong>क्वाड-कोर प्रोसेसर</strong> एक साथ चार कार्यों को संभाल सकता है, जिससे मल्टीटास्किंग जैसे कि वेब ब्राउज़िंग करते हुए डॉक्युमेंट एडिट करना संभव होता है।</p>
+</li>
+<li>
+<p><strong>पोर्टेबल डिवाइसों के लिए पावर एफिशिएंसी:</strong> जैसे-जैसे तकनीक उन्नत हुई, माइक्रोप्रोसेसर अधिक पावर-एफिशिएंट हो गए, जो मोबाइल डिवाइसों जैसे कि स्मार्टफोन और टैबलेट के लिए महत्वपूर्ण हैं। ये प्रोसेसर कम पावर का उपभोग करते हुए प्रदर्शन बनाए रखने के लिए डिज़ाइन किए गए हैं, जिससे पोर्टेबल डिवाइसों की बैटरी लाइफ लंबी होती है।</p>
+</li>
+</ol>
+<hr/>
+<h2 id="_8"><strong>सॉफ़्टवेयर: उद्देश्य और प्रकार</strong></h2>
+<h3 id="_9"><strong>सिस्टम सॉफ़्टवेयर</strong></h3>
+<p>सिस्टम सॉफ़्टवेयर हार्डवेयर को प्रबंधित और नियंत्रित करने के लिए आवश्यक है ताकि एप्लिकेशन सॉफ़्टवेयर कार्य कर सके। यह हार्डवेयर और यूज़र अनुप्रयोगों के बीच पुल का काम करता है। बिना सिस्टम सॉफ़्टवेयर के, कंप्यूटर सही से काम नहीं कर पाएगा।</p>
+<ul>
+<li><strong>उदाहरण</strong>:<ul>
+<li><strong>ऑपरेटिंग सिस्टम:</strong> हार्डवेयर संसाधनों को प्रबंधित करता है, एप्लिकेशन चलाता है, और उपयोगकर्ता इंटरफ़ेस प्रदान करता है। लोकप्रिय OS के उदाहरणों में <strong>Windows</strong>, <strong>MacOS</strong>, <strong>Linux</strong>, और <strong>Android</strong> शामिल हैं।  </li>
+<li><strong>डिवाइस ड्राइवर्स:</strong> ये विशेष कार्यक्रम होते हैं जो हार्डवेयर उपकरणों (जैसे प्रिंटर, कीबोर्ड, और वेबकैम) को कंप्यूटर सिस्टम के साथ संचारित करने की अनुमति देते हैं। बिना सही ड्राइवर्स के, आपका हार्डवेयर कंप्यूटर के साथ काम नहीं करेगा।</li>
+</ul>
+</li>
+</ul>
+<h3 id="_10"><strong>एप्लिकेशन सॉफ़्टवेयर</strong></h3>
+<p>एप्लिकेशन सॉफ़्टवेयर उन प्रोग्रामों से बना होता है जो उपयोगकर्ताओं को विशिष्ट कार्य पूरे करने में मदद करते हैं। ये वे दैनिक उपयोग के प्रोग्राम होते हैं जिनके साथ लोग उत्पादकता, मनोरंजन और अन्य कार्यों के लिए इंटरैक्ट करते हैं।</p>
+<ul>
+<li><strong>उदाहरण</strong>:<ul>
+<li><strong>वर्ड प्रोसेसर:</strong> <strong>Microsoft Word</strong> या <strong>Google Docs</strong> जैसे प्रोग्राम, जो आपको दस्तावेज़ लिखने, संपादित करने और स्वरूपित करने की सुविधा देते हैं।</li>
+<li><strong>गेम्स:</strong> सरल गेम्स जैसे <strong>Minesweeper</strong> से लेकर जटिल टाइटल्स जैसे <strong>Minecraft</strong> या <strong>Fortnite</strong> तक।</li>
+<li><strong>वेब ब्राउज़र:</strong> <strong>Google Chrome</strong>, <strong>Firefox</strong>, या <strong>Safari</strong> जैसे प्रोग्राम, जो आपको वेब ब्राउज़ करने की अनुमति देते हैं।</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 id="_11"><strong>लैंग्वेज ट्रांसलेटर्स</strong></h3>
+<p>कंप्यूटर <strong>बाइनरी कोड</strong> (1s और 0s) का उपयोग करके काम करते हैं, जो मनुष्यों के लिए लिखना और समझना मुश्किल होता है। <strong>लैंग्वेज ट्रांसलेटर्स</strong> मानव-पढ़ने योग्य कोड को मशीन-पढ़ने योग्य निर्देशों में बदलते हैं।</p>
+<ul>
+<li><strong>कम्पाइलर्स:</strong> ये प्रोग्राम द्वारा लिखे गए पूरे सोर्स कोड को मशीन कोड में बदलते हैं, इससे पहले कि प्रोग्राम चलाया जाए। उदाहरण के लिए, <strong>C++</strong> एक कम्पाइलर का उपयोग करता है।</li>
+<li><strong>इंटरप्रिटर्स:</strong> ये प्रोग्राम के चलने के दौरान सोर्स कोड को लाइन-बाय-लाइन मशीन कोड में अनुवाद करते हैं। <strong>Python</strong> एक इंटरप्रिटर का उपयोग करता है, जिससे आप कोड को इंटरैक्टिव तरीके से चला सकते हैं।</li>
+</ul>
+<hr/>
+<h3 id="_12"><strong>डिवाइस ड्राइवर्स</strong></h3>
+<p>डिवाइस ड्राइवर्स विशेष प्रोग्राम होते हैं जो आपके ऑपरेटिंग सिस्टम को हार्डवेयर घटकों के साथ संचार करने में मदद करते हैं। उदाहरण के लिए, जब आप एक नया प्रिंटर प्लग करते हैं, तो एक डिवाइस ड्राइवर आपके कंप्यूटर को इसके साथ "बातचीत" करने में मदद करता है ताकि आप अपने दस्तावेज़ों को प्रिंट कर सकें।</p>
+<ul>
+<li><strong>उदाहरण</strong>: प्रिंटर ड्राइवर्स, डिस्प्ले ड्राइवर्स, ऑडियो ड्राइवर्स, आदि।</li>
+</ul>
+<hr/>
+<h2 id="_13"><strong>प्रोग्रामिंग भाषाओं का वर्गीकरण</strong></h2>
+<h3 id="-"><strong>हाई-लेवल लैंग्वेज</strong></h3>
+<p>हाई-लेवल लैंग्वेज़ेस को उपयोगकर्ता के अनुकूल बनाने के लिए डिज़ाइन किया गया है, जो ऐसे शब्दों और सिंटैक्स का उपयोग करती हैं जिन्हें पढ़ना और लिखना आसान होता है। इन भाषाओं को कंप्यूटर समझने के लिए मशीन लैंग्वेज (बाइनरी कोड) में अनुवादित किया जाना चाहिए।</p>
+<ul>
+<li><strong>उदाहरण</strong>: लोकप्रिय हाई-लेवल भाषाओं में <strong>Python</strong>, <strong>Java</strong>, और <strong>C++</strong> शामिल हैं।</li>
+<li><strong>मज़ेदार उदाहरण</strong>: कल्पना करें कि आप अपने दोस्त को दिशा-निर्देश दे रहे हैं। एक हाई-लेवल लैंग्वेज में, आप कह सकते हैं, "अगले ट्रैफिक लाइट पर बाईं ओर मुड़ें, फिर दूसरी दाईं ओर मुड़ें।" यह मनुष्यों के लिए समझने में सरल है, लेकिन एक कंप्यूटर को अधिक विशिष्ट और विस्तृत निर्देशों की आवश्यकता होती है!</li>
+</ul>
+<h3 id="_14"><strong>मशीन लैंग्वेज</strong></h3>
+<p>मशीन लैंग्वेज, या बाइनरी कोड, वह लो-लेवल भाषा है जिसे कंप्यूटर स्वाभाविक रूप से समझते हैं। इसमें 1s और 0s की एक श्रृंखला होती है। प्रत्येक ऑपरेशन, जैसे कि दो संख्याओं को जोड़ना या एक फ़ाइल को सहेजना, बाइनरी निर्देशों के एक अद्वितीय पैटर्न में अनुवादित होता है जिसे कंप्यूटर निष्पादित कर सकते हैं।</p>
+<ul>
+<li><strong>उदाहरण</strong>: "01010101" हमें भले ही उलझन भरा लगे, लेकिन यह वही तरीका है जिससे एक कंप्यूटर यह जानता है कि क्या करना है। मशीन लैंग्वेज को सीधे लिखना मनुष्यों के लिए कठिन होता है, लेकिन कंप्यूटर इसे बहुत तेज़ी से प्रोसेस कर सकते हैं।</li>
+</ul>
+<hr/>
+<h2 id="os"><strong>ऑपरेटिंग सिस्टम (OS)</strong></h2>
+<h3 id="_15"><strong>ऑपरेटिंग सिस्टम की आवश्यकता</strong></h3>
+<p>ऑपरेटिंग सिस्टम (OS) आवश्यक होता है क्योंकि यह उपयोगकर्ताओं को कंप्यूटर के हार्डवेयर और सॉफ़्टवेयर के साथ इंटरैक्ट करने की अनुमति देता है, बिना यह समझने की आवश्यकता के कि सब कुछ कैसे काम करता है। यह हार्डवेयर और उपयोगकर्ता के बीच एक मध्यस्थ के रूप में कार्य करता है।</p>
+<h3 id="_16"><strong>ऑपरेटिंग सिस्टम के कार्य</strong></h3>
+<ol>
+<li><strong>मेमोरी और प्रक्रियाओं का प्रबंधन:</strong> OS कंप्यूटर की मेमोरी और चल रहे प्रोग्रामों को प्रबंधित करता है। यह तय करता है कि कौन से एप्लिकेशनों को मेमोरी और CPU समय मिलेगा।</li>
+<li><strong>इनपुट और आउटपुट को संभालता है:</strong> OS कीबोर्ड और माउस जैसे उपकरणों से इनपुट और मॉनिटर और प्रिंटर जैसे उपकरणों को आउटपुट को प्रबंधित करता है।</li>
+<li>
+<p><strong>यूज़र इंटरफ़ेस (UI) प्रदान करता है:</strong> UI वह ग्राफिकल इंटरफ़ेस है जिससे आप इंटरैक्ट करते हैं, जैसे कि डेस्कटॉप, आइकन्स, और टास्कबार। यह कंप्यूटर का उपयोग करना आसान बनाता है, बिना मशीन लैंग्वेज को जाने।</p>
+</li>
+<li>
+<p><strong>मज़ेदार उदाहरण:</strong> OS को एक ऑर्केस्ट्रा में कंडक्टर के रूप में सोचें, जो सुनिश्चित करता है कि सभी उपकरण (हार्डवेयर और सॉफ़्टवेयर) मिलकर सामंजस्य से कार्य करें।</p>
+</li>
+</ol>
+<hr/>
+<h2 id="_17"><strong>महत्वपूर्ण शब्दावली:</strong></h2>
+<ul>
+<li><strong>CPU (Central Processing Unit):</strong> कंप्यूटर का मुख्य प्रोसेसर जो गणनाएँ करता है और निर्देशों को निष्पादित करता है।</li>
+<li><strong>I/O Devices (Input/Output Devices):</strong> वे डिवाइस जो कंप्यूटर के साथ इंटरैक्शन की अनुमति देते हैं।</li>
+<li><strong>Data:</strong> कच्चे, बिना संसाधित तथ्य।</li>
+<li><strong>Information:</strong> डेटा जो संसाधित और व्यवस्थित किया गया हो ताकि वह उपयोगी हो सके।</li>
+<li><strong>Memory:</strong> स्टोरेज जो कंप्यूटर को डेटा और निर्देशों का ट्रैक रखने की अनुमति देती है।</li>
+<li><strong>Microprocessor:</strong> CPU में मुख्य प्रोसेसिंग चिप।</li>
+<li><strong>Software:</strong> प्रोग्राम जो कंप्यूटर को निर्देश देते हैं।</li>
+<li><strong>Generic Software:</strong> सामान्य कार्यों के लिए उपयोग किए जाने वाले प्रोग्राम, जैसे वर्ड प्रोसेसिंग।</li>
+<li><strong>Specific Purpose Software:</strong> विशिष्ट कार्यों के लिए डिज़ाइन किए गए प्रोग्राम, जैसे वीडियो संपादन।</li>
+<li><strong>High-Level Language:</strong> प्रोग्रामिंग भाषाएँ जो मनुष्यों के लिए समझने में आसान होती हैं।</li>
+<li><strong>Machine Language:</strong> कंप्यूटर की मूल भाषा जो बाइनरी कोड से बनी होती है।</li>
+<li><strong>Operating System (OS):</strong> सॉफ़्टवेयर जो कंप्यूटर के हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करता है।</li>
+<li><strong>Device Drivers:</strong> विशेष प्रोग्राम जो ऑपरेटिंग सिस्टम को हार्डवेयर के साथ संचारित करने में मदद करते हैं।</li>
+</ul>
+<hr/>
+<h3 id="_18"><strong>मज़ेदार उदाहरण:</strong></h3>
+<p>CPU को एक रेस्तरां में शेफ के रूप में कल्पना करें। शेफ (CPU) ग्राहकों (इनपुट) से ऑर्डर प्राप्त करता है, सामग्री (डेटा) को संसाधित करता है, और ग्राहकों को भोजन (आउटपुट) देता है। किचन का स्टोरेज (मेमोरी) उन सामग्रियों (डेटा) को रखता है जिन्हें शेफ को खाना बनाने के लिए चाहिए। अगर रेसिपी (सॉफ़्टवेयर) कुशलता से तैयार की गई हो, तो शेफ तेजी से काम करता है!</p>
+<hr/>
+<h2 id="_19"><strong>प्रश्नावली:</strong></h2>
+<ol>
+<li>
+<p><strong>कंप्यूटर के किस भाग को सिस्टम का मस्तिष्क कहा जाता है?</strong><br/>
+    a) इनपुट यूनिट<br/>
+    b) आउटपुट यूनिट<br/>
+    c) सेंट्रल प्रोसेसिंग यूनिट (CPU)<br/>
+    d) मेमोरी  </p>
+</li>
+<li>
+<p><strong>सही या गलत: ROM एक प्रकार की मेमोरी है जो अस्थायी रूप से डेटा संग्रहीत करती है।</strong> </p>
+</li>
+<li>
+<p><strong>कौन सा सॉफ़्टवेयर हार्डवेयर संसाधनों को प्रबंधित करता है?</strong><br/>
+    a) एप्लिकेशन सॉफ़्टवेयर<br/>
+    b) सिस्टम सॉफ़्टवेयर<br/>
+    c) डिवाइस ड्राइवर्स<br/>
+    d) लैंग्वेज ट्रांसलेटर्स  </p>
+</li>
+<li>
+<p><strong>रिक्त स्थान भरें: एक माइक्रोप्रोसेसर <strong><em>_</em></strong>_____ का उपयोग CPU में संचालन करने के लिए करता है।</strong> </p>
+</li>
+<li>
+<p><strong>निम्नलिखित में से कौन सी एक हाई-लेवल प्रोग्रामिंग भाषा है?</strong><br/>
+    a) बाइनरी कोड<br/>
+    b) Python<br/>
+    c) मशीन कोड<br/>
+    d) उपरोक्त में से कोई नहीं  </p>
+</li>
+<li>
+<p><strong>सही या गलत: विशिष्ट उद्देश्य वाला सॉफ़्टवेयर वर्ड प्रोसेसिंग जैसे कार्यों के लिए उपयोग किया जाता है।</strong> </p>
+</li>
+<li>
+<p><strong>कौन सी मेमोरी RAM से तेज़ लेकिन छोटी होती है?</strong><br/>
+    a) Cache Memory<br/>
+    b) Hard Drive<br/>
+    c) ROM<br/>
+    d) SSD  </p>
+</li>
+<li>
+<p><strong>कंप्यूटर में डिवाइस ड्राइवर्स की क्या भूमिका होती है?</strong><br/>
+    a) डेटा स्टोर करना<br/>
+    b) हाई-लेवल लैंग्वेजेस का अनुवाद करना<br/>
+    c) प्रक्रियाओं का प्रबंधन करना<br/>
+    d) OS को हार्डवेयर डिवाइसेस के साथ संवाद करने में मदद करना  </p>
+</li>
+<li>
+<p><strong>सही या गलत: ऑपरेटिंग सिस्टम CPU और मेमोरी के बीच डेटा के प्रवाह को नियंत्रित करता है।</strong> </p>
+</li>
+<li>
+<p><strong>निम्नलिखित में से कौन सा एक आउटपुट डिवाइस है?</strong><br/>
+    a) कीबोर्ड<br/>
+    b) प्रिंटर<br/>
+    c) माउस<br/>
+    d) स्कैनर  </p>
+</li>
+</ol>
+<hr/>
+<h2 id="_20"><strong>उत्तर:</strong></h2>
+<ol>
+<li>c) Central Processing Unit (CPU)  </li>
+<li>गलत  </li>
+<li>b) System Software  </li>
+<li>Microprocessor  </li>
+<li>b) Python  </li>
+<li>गलत  </li>
+<li>a) Cache Memory  </li>
+<li>d) OS को हार्डवेयर डिवाइसेस के साथ संवाद करने में मदद करना  </li>
+<li>सही  </li>
+<li>b) प्रिंटर  </li>
+</ol>
+<hr/>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was just okay" data-md-value="3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8m-3.5-9A1.5 1.5 0 0 1 7 9.5 1.5 1.5 0 0 1 8.5 8 1.5 1.5 0 0 1 10 9.5 1.5 1.5 0 0 1 8.5 11M17 9.5a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 14 9.5 1.5 1.5 0 0 1 15.5 8 1.5 1.5 0 0 1 17 9.5M16 14v2H8v-2z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="3" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="5" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  शीर्षभाग पर लौटें
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Anshul Yadav
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/deepsai8" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/deepaksingh8819" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u0915\u094d\u0932\u093f\u092a\u092c\u094b\u0930\u094d\u0921 \u092a\u0930 \u0915\u0949\u092a\u0940 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e", "clipboard.copy": "\u0915\u094d\u0932\u093f\u092a\u092c\u094b\u0930\u094d\u0921 \u092a\u0930 \u0915\u0949\u092a\u0940 \u0915\u0930\u0947\u0902", "search.result.more.one": "1 \u0914\u0930 \u0907\u0938 \u092a\u0943\u0937\u094d\u0920 \u092a\u0930", "search.result.more.other": "# \u0914\u0930 \u0907\u0938 \u092a\u0943\u0937\u094d\u0920 \u092a\u0930", "search.result.none": "\u0915\u094b\u0908 \u092e\u093f\u0932\u093e\u0928 \u0921\u0949\u0915\u094d\u092f\u0942\u092e\u0947\u0902\u091f \u0928\u0939\u0940\u0902", "search.result.one": "1 \u092e\u093f\u0932\u093e\u0928 \u0921\u0949\u0915\u094d\u092f\u0942\u092e\u0947\u0902\u091f", "search.result.other": "# \u092e\u093f\u0932\u093e\u0928 \u0921\u093e\u0915\u094d\u092f\u0942\u092e\u0947\u0902\u091f\u094d\u0938", "search.result.placeholder": "\u0916\u094b\u091c \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u091f\u093e\u0907\u092a \u0915\u0930\u0947\u0902", "search.result.term.missing": "\u095a\u093e\u092f\u092c", "select.version": "\u0935\u0930\u094d\u0936\u0928 \u091a\u0941\u0928\u0947\u0902"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/feedback.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

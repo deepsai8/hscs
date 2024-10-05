@@ -1,0 +1,1424 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A Space to learn Computer Science in byte-sized lessons for high-school students">
+      
+      
+        <meta name="author" content="Anshul Yadav">
+      
+      
+        <link rel="canonical" href="https://deepsai8.github.io/hscs/chapters/chapter03/">
+      
+      
+        <link rel="prev" href="../chapter02/">
+      
+      
+        <link rel="next" href="../chapter04/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>3. Emerging Trends - High School Computer Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Google Sans";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-1FM49NNNNZ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-1FM49NNNNZ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-1FM49NNNNZ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-3-emerging-trends" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="High School Computer Science" class="md-header__button md-logo" aria-label="High School Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            High School Computer Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Emerging Trends
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../hi/chapters/chapter03/" hreflang="hi" class="md-select__link">
+              Hindi
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/deepsai8/hscs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="High School Computer Science" class="md-nav__button md-logo" aria-label="High School Computer Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    High School Computer Science
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/deepsai8/hscs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Computer System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Encoding Schemes and Number Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3. Emerging Trends
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    3. Emerging Trends
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-artificial-intelligence-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Artificial Intelligence (AI):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Machine Learning:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-natural-language-processing-nlp" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Natural Language Processing (NLP):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-robotics" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Robotics:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-big-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Big Data:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-internet-of-things-iot" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Internet of Things (IoT):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Sensors:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-smart-cities" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Smart Cities:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-cloud-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9 Cloud Computing:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#310-grid-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.10 Grid Computing:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#311-blockchain-technology" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.11 Blockchain Technology:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-5g-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.12 5G Network:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-e-commerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.13 E-Commerce:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Terminology:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quiz:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Answers:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Problem Solving
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Getting Started with Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5a. Flow of Control and Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05b/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5b. Strings and Lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05c/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5c. Tuples and Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Societal Impacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Suggested Practical Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qbank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Question Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qbank_ans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Answers to Question Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-artificial-intelligence-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Artificial Intelligence (AI):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Machine Learning:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-natural-language-processing-nlp" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Natural Language Processing (NLP):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-robotics" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Robotics:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-big-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Big Data:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-internet-of-things-iot" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Internet of Things (IoT):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Sensors:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-smart-cities" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Smart Cities:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-cloud-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9 Cloud Computing:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#310-grid-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.10 Grid Computing:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#311-blockchain-technology" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.11 Blockchain Technology:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-5g-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.12 5G Network:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-e-commerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.13 E-Commerce:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Terminology:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quiz:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Answers:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="unit-3-emerging-trends"><strong>Unit 3: Emerging Trends</strong></h1>
+<hr/>
+<h2 id="introduction"><strong>Introduction:</strong></h2>
+<p>Technology is evolving at a rapid pace, and with it, new trends and innovations are emerging every day. From smart cities to artificial intelligence (AI), these advancements are changing the way we live, work, and interact with the world. In this unit, we’ll explore some of the most exciting and influential trends in modern technology, such as AI, the Internet of Things (IoT), 5G networks, and more. By the end of this unit, you’ll have a good understanding of how these technologies work and why they’re shaping the future.</p>
+<hr/>
+<h2 id="31-artificial-intelligence-ai"><strong>3.1 Artificial Intelligence (AI):</strong></h2>
+<p><strong>Artificial Intelligence (AI)</strong> refers to the ability of machines to perform tasks that normally require human intelligence, such as recognizing speech, understanding language, and making decisions. AI systems can be categorized into two types:</p>
+<ol>
+<li>
+<p><strong>Narrow AI:</strong> This type of AI is designed to perform a specific task. Examples include virtual assistants like Siri or Google Assistant, which are good at understanding voice commands but cannot perform tasks outside their programming.</p>
+</li>
+<li>
+<p><strong>General AI:</strong> This is the idea of creating a machine that has human-like intelligence and can perform any intellectual task that a human can do. General AI is still in the realm of research and has not yet been achieved.</p>
+</li>
+</ol>
+<p><strong>Where AI is used:</strong><br/>
+    - <strong>Healthcare:</strong> AI helps doctors analyze medical data and diagnose diseases more accurately.<br/>
+    - <strong>Finance:</strong> AI systems are used to detect fraudulent transactions and manage investments.<br/>
+    - <strong>Entertainment:</strong> AI powers recommendation systems, like Netflix, that suggest movies based on your viewing history.  </p>
+<p><strong>Fun Fact:</strong>
+Imagine AI as a really smart calculator that can do more than just math—it can think, learn, and even chat with you!</p>
+<hr/>
+<h2 id="32-machine-learning"><strong>3.2 Machine Learning:</strong></h2>
+<p><strong>Machine Learning (ML)</strong> is a subset of AI where machines learn from data to improve their performance over time. Instead of following explicit instructions, ML algorithms analyze patterns in data and make predictions or decisions based on what they learn.</p>
+<p><strong>Examples of ML in everyday life:</strong><br/>
+    - <strong>Recommendation Systems:</strong> Websites like YouTube, Netflix, and Amazon use ML to recommend videos or products based on your past   behavior.<br/>
+    - <strong>Spam Detection:</strong> ML helps email systems filter out unwanted spam emails.<br/>
+    - <strong>Self-Driving Cars:</strong> ML allows self-driving cars to recognize objects and make decisions on the road.  </p>
+<p><strong>How it works:</strong>
+ML systems use algorithms to process large amounts of data, identify patterns, and make predictions. For example, if an ML algorithm is fed data about customer purchases, it might learn to predict which products a customer is likely to buy next.</p>
+<hr/>
+<h2 id="33-natural-language-processing-nlp"><strong>3.3 Natural Language Processing (NLP):</strong></h2>
+<p><strong>Natural Language Processing (NLP)</strong> is a branch of AI that focuses on helping machines understand, interpret, and respond to human language. NLP enables computers to process spoken or written language just like a human does.</p>
+<p><strong>Key applications of NLP:</strong><br/>
+    - <strong>Voice Assistants:</strong> Alexa, Siri, and Google Assistant use NLP to understand your commands and respond appropriately.<br/>
+    - <strong>Chatbots:</strong> Many companies use NLP-powered chatbots to answer customer questions or assist with online tasks.<br/>
+    - <strong>Translation Tools:</strong> Google Translate uses NLP to translate text from one language to another.  </p>
+<p><strong>Challenges in NLP:</strong>
+Human language is complex, filled with slang, idioms, and context that make it hard for machines to fully understand. However, advances in NLP have made it possible for computers to carry out conversations and understand text much better than before.</p>
+<hr/>
+<h2 id="34-robotics"><strong>3.4 Robotics:</strong></h2>
+<p><strong>Robotics</strong> is the field of technology that involves designing and building robots. Robots are machines that can carry out complex tasks automatically or under human guidance.</p>
+<p><strong>Common uses of robots:</strong><br/>
+    - <strong>Manufacturing:</strong> Robots are widely used in factories to assemble cars, package goods, and handle repetitive tasks that require   precision.<br/>
+    - <strong>Healthcare:</strong> Surgical robots assist doctors in performing delicate operations with more accuracy than human hands.<br/>
+    - <strong>Exploration:</strong> Robots like the Mars Rover explore areas that are too dangerous or remote for humans.  </p>
+<p><strong>Future of Robotics:</strong>
+As technology advances, robots are being developed to perform more complex tasks, including interacting with humans in daily life. For example, household robots may soon assist with chores, or even provide companionship to the elderly.</p>
+<hr/>
+<h2 id="35-big-data"><strong>3.5 Big Data:</strong></h2>
+<p><strong>Big Data</strong> refers to the vast amount of data generated every day by devices like smartphones, sensors, social media, and online transactions. This data is so large and complex that traditional data-processing tools cannot handle it.</p>
+<p><strong>Big Data Defined by the Vs</strong> </p>
+<p>Big Data is often characterized by a set of dimensions known as the "Vs." These characteristics help describe the various aspects and complexities of Big Data. Here are the main Vs commonly associated with Big Data:</p>
+<ul>
+<li>
+<p><strong>1. Volume</strong> </p>
+<ul>
+<li><strong>Definition</strong>: Refers to the amount of data generated and collected. Big Data involves massive volumes of data that traditional data processing software cannot handle efficiently.  </li>
+<li><strong>Example</strong>: Companies like Google and Facebook generate petabytes (1 petabyte = 1,024 terabytes) of data every day through user interactions, social media posts, and search queries.  </li>
+</ul>
+</li>
+<li>
+<p><strong>2. Velocity</strong> </p>
+<ul>
+<li><strong>Definition</strong>: Describes the speed at which data is generated, processed, and analyzed. In today's digital world, data is created and needs to be processed in real-time or near-real-time.  </li>
+<li><strong>Example</strong>: Financial trading platforms analyze stock market data in milliseconds to make trading decisions based on current market conditions.  </li>
+</ul>
+</li>
+<li>
+<p><strong>3. Variety</strong> </p>
+<ul>
+<li><strong>Definition</strong>: Refers to the different types and formats of data that are generated. Big Data encompasses structured data (like databases), semi-structured data (like XML or JSON), and unstructured data (like text, images, and videos).  </li>
+<li><strong>Example</strong>: A single organization might collect customer data from surveys (structured), social media interactions (unstructured), and transaction logs (semi-structured), all of which need to be integrated for analysis.  </li>
+</ul>
+</li>
+<li>
+<p><strong>4. Veracity</strong> </p>
+<ul>
+<li><strong>Definition</strong>: Addresses the quality and accuracy of the data. Not all data is reliable, and it’s crucial to assess the trustworthiness and validity of data sources.  </li>
+<li><strong>Example</strong>: Data collected from sensors in IoT devices may contain noise or inaccuracies due to hardware malfunctions, affecting the quality of the analysis.  </li>
+</ul>
+</li>
+<li>
+<p><strong>5. Value</strong></p>
+<ul>
+<li><strong>Definition</strong>: Refers to the potential value that can be extracted from Big Data. Simply having a large volume of data doesn’t mean it’s useful unless insights can be derived that drive decision-making.  </li>
+<li><strong>Example</strong>: A retail company can analyze customer purchase patterns to optimize inventory, enhance customer experiences, and increase sales.  </li>
+</ul>
+</li>
+</ul>
+<p><strong>Where Big Data is used:</strong><br/>
+    - <strong>Marketing:</strong> Companies analyze customer behavior and preferences to deliver personalized ads.<br/>
+    - <strong>Healthcare:</strong> Hospitals use Big Data to track patient data and predict disease outbreaks.<br/>
+    - <strong>Finance:</strong> Big Data helps banks detect fraudulent transactions and predict market trends.  </p>
+<p><strong>Fun Fact:</strong>
+Every minute, humans generate over <strong>2.5 quintillion bytes</strong> of data! That’s more data than you can ever imagine.</p>
+<hr/>
+<h2 id="36-internet-of-things-iot"><strong>3.6 Internet of Things (IoT):</strong></h2>
+<p>The <strong>Internet of Things (IoT)</strong> refers to a network of physical devices that are connected to the internet, allowing them to collect, share, and exchange data. These devices range from smart home appliances to industrial sensors.</p>
+<p><strong>Examples of IoT devices:</strong><br/>
+    - <strong>Smart Homes:</strong> Devices like smart speakers, thermostats, and security systems can be controlled remotely using apps.<br/>
+    - <strong>Healthcare:</strong> Wearable devices like fitness trackers monitor your health data, such as heart rate and sleep patterns.<br/>
+    - <strong>Smart Cities:</strong> IoT is used to monitor traffic, reduce pollution, and optimize energy consumption in urban areas.  </p>
+<p><strong>Impact of IoT:</strong>
+IoT is making everyday life more convenient and efficient. In the future, even more devices—from refrigerators to streetlights—will be connected to the internet, creating a more interconnected world.</p>
+<hr/>
+<h2 id="37-sensors"><strong>3.7 Sensors:</strong></h2>
+<p><strong>Sensors</strong> are devices that detect changes in the environment and send the information to other electronic systems. Sensors are essential components of IoT devices and modern technology in general.</p>
+<p><strong>Types of sensors:</strong><br/>
+    - <strong>Temperature Sensors:</strong> These measure temperature changes and are used in thermostats to control heating or cooling.<br/>
+    - <strong>Motion Sensors:</strong> Commonly used in security systems to detect movement.<br/>
+    - <strong>Biometric Sensors:</strong> These measure physical characteristics like heart rate, and are often found in fitness trackers or smartwatches.  </p>
+<p><strong>Fun Fact:</strong>
+Your smartphone is packed with sensors! It has an accelerometer (to detect movement), a proximity sensor (to turn off the screen when you hold it to your ear), and many others.</p>
+<hr/>
+<h2 id="38-smart-cities"><strong>3.8 Smart Cities:</strong></h2>
+<p>A <strong>Smart City</strong> uses technology, particularly IoT and sensors, to manage resources efficiently and improve the quality of life for its citizens. Data from sensors and devices is used to manage traffic, monitor air quality, and enhance public safety.</p>
+<p><strong>Examples of Smart City technology:</strong><br/>
+    - <strong>Traffic Management:</strong> Smart traffic lights adjust in real-time to minimize congestion.<br/>
+    - <strong>Energy Efficiency:</strong> Smart meters monitor energy usage, helping homes and businesses reduce electricity consumption.<br/>
+    - <strong>Waste Management:</strong> Sensors in trash bins signal when they are full, optimizing waste collection routes.  </p>
+<p><strong>Future of Smart Cities:</strong>
+As cities grow, smart city technology will play a vital role in reducing pollution, improving traffic flow, and enhancing safety for residents.</p>
+<hr/>
+<h2 id="39-cloud-computing"><strong>3.9 Cloud Computing:</strong></h2>
+<p><strong>Cloud Computing</strong> allows users to store and access data and applications over the internet instead of on their local devices. This makes it possible to access your files and run software from anywhere, as long as you have an internet connection.</p>
+<p><strong>Types of cloud services:</strong><br/>
+    - <strong>Infrastructure as a Service (IaaS):</strong> Renting virtual servers and storage from cloud providers.<br/>
+    - <strong>Platform as a Service (PaaS):</strong> A platform for developers to build and deploy applications.<br/>
+    - <strong>Software as a Service (SaaS):</strong> Applications delivered over the internet, like Google Docs or Dropbox.  </p>
+<p><strong>Why Cloud Computing matters:</strong>
+Cloud computing has made collaboration, data storage, and software access easier and more affordable for both individuals and businesses.</p>
+<hr/>
+<h2 id="310-grid-computing"><strong>3.10 Grid Computing:</strong></h2>
+<p><strong>Grid Computing</strong> is the practice of connecting multiple computers in different locations to work on a single task, as if they were a single supercomputer. This approach allows for the sharing of resources like processing power and storage across a network.</p>
+<p><strong>Where Grid Computing is used:</strong><br/>
+    - <strong>Scientific Research:</strong> Grid computing is used to simulate weather patterns, analyze massive datasets, and perform complex   calculations that a single computer couldn’t handle.<br/>
+    - <strong>Medicine:</strong> Grid computing helps researchers analyze biological data to discover new drugs or understand diseases.  </p>
+<hr/>
+<h2 id="311-blockchain-technology"><strong>3.11 Blockchain Technology:</strong></h2>
+<p><strong>Blockchain</strong> is a decentralized and secure technology used to record transactions across multiple computers. It’s best known for being the underlying technology behind cryptocurrencies like Bitcoin, but it has many other applications.</p>
+<p><strong>How Blockchain works:</strong><br/>
+    - In a blockchain, transactions are grouped into blocks.<br/>
+    - Each block is linked to the previous one using cryptography, creating a chain that is secure and difficult to tamper with.  </p>
+<p><strong>Applications beyond cryptocurrency:</strong><br/>
+    - <strong>Supply Chain Management:</strong> Blockchain can be used to track the journey of goods from production to delivery.<br/>
+    - <strong>Voting Systems:</strong> It can ensure secure and transparent elections by recording votes on a public ledger.<br/>
+    - <strong>Smart Contracts:</strong> Contracts that automatically execute when specific conditions are met, reducing the need for intermediaries.  </p>
+<hr/>
+<h2 id="312-5g-network"><strong>3.12 5G Network:</strong></h2>
+<p><strong>5G</strong> is the latest generation of mobile network technology, offering faster speeds, lower latency (the time it</p>
+<p>takes for data to travel), and the ability to connect more devices simultaneously than previous generations (like 4G).</p>
+<p><strong>Benefits of 5G:</strong><br/>
+    - <strong>Faster Internet Speeds:</strong> Downloading a full movie will take seconds rather than minutes.<br/>
+    - <strong>IoT Expansion:</strong> With the ability to connect more devices at once, 5G will enable smart cities, autonomous vehicles, and more.<br/>
+    - <strong>Enhanced Mobile Experiences:</strong> 5G will make applications like augmented reality (AR) and virtual reality (VR) more accessible.  </p>
+<p><strong>Fun Fact:</strong>
+5G can deliver data <strong>100 times faster</strong> than 4G, unlocking possibilities for new technologies and faster communication.</p>
+<hr/>
+<h2 id="313-e-commerce"><strong>3.13 E-Commerce:</strong></h2>
+<p><strong>E-Commerce</strong> refers to buying and selling goods and services online. This includes online shopping, booking services, and even online auctions.</p>
+<p><strong>Types of e-commerce:</strong><br/>
+    - <strong>B2C (Business-to-Consumer):</strong> Online retail stores like Amazon and eBay.<br/>
+    - <strong>B2B (Business-to-Business):</strong> Companies selling products and services to other businesses.<br/>
+    - <strong>C2C (Consumer-to-Consumer):</strong> Platforms like eBay, where consumers sell products to other consumers.  </p>
+<p><strong>Impact of E-Commerce:</strong>
+E-commerce has transformed traditional business by allowing customers to shop from anywhere at any time. It has also made it easier for small businesses to reach a global audience.</p>
+<hr/>
+<h2 id="important-terminology"><strong>Important Terminology:</strong></h2>
+<ul>
+<li><strong>Artificial Intelligence (AI):</strong> The simulation of human intelligence by machines.</li>
+<li><strong>Machine Learning (ML):</strong> A subset of AI where machines learn from data to make predictions or decisions.</li>
+<li><strong>Natural Language Processing (NLP):</strong> A branch of AI that enables computers to understand and interpret human language.</li>
+<li><strong>Robotics:</strong> The field of creating robots that can perform tasks autonomously.</li>
+<li><strong>Big Data:</strong> The vast amount of data generated from various sources, analyzed to discover trends and patterns.</li>
+<li><strong>Internet of Things (IoT):</strong> A network of connected devices that collect and exchange data.</li>
+<li><strong>Sensors:</strong> Devices that detect and measure changes in the environment.</li>
+<li><strong>Blockchain:</strong> A decentralized, secure technology used to record transactions.</li>
+<li><strong>5G:</strong> The fifth generation of mobile networks, offering faster speeds and lower latency.</li>
+<li><strong>E-Commerce:</strong> The buying and selling of goods and services over the internet.</li>
+</ul>
+<hr/>
+<h2 id="quiz"><strong>Quiz:</strong></h2>
+<ol>
+<li>
+<p>What is Artificial Intelligence?<br/>
+    a) A type of hardware<br/>
+    b) The simulation of human intelligence by machines<br/>
+    c) A programming language<br/>
+    d) A network protocol  </p>
+</li>
+<li>
+<p>True or False: Machine Learning improves over time by analyzing data.  </p>
+</li>
+<li>
+<p>Which of the following is NOT an example of IoT?<br/>
+    a) Smart thermostat<br/>
+    b) Smartphone<br/>
+    c) Fitness tracker<br/>
+    d) Microwave oven  </p>
+</li>
+<li>
+<p>What does NLP stand for?<br/>
+    a) Natural Light Processing<br/>
+    b) Network Latency Protocol<br/>
+    c) Natural Language Processing<br/>
+    d) Neural Logic Protocol  </p>
+</li>
+<li>
+<p>What is the purpose of Blockchain technology?<br/>
+    a) Create virtual reality environments<br/>
+    b) Securely record transactions<br/>
+    c) Analyze large datasets<br/>
+    d) Transmit data across networks  </p>
+</li>
+<li>
+<p>True or False: 5G networks have higher speeds and lower latency than 4G.  </p>
+</li>
+<li>
+<p>Which of the following is a common use of cloud computing?<br/>
+    a) Physical data storage<br/>
+    b) Renting virtual servers<br/>
+    c) Designing robots<br/>
+    d) Managing financial transactions  </p>
+</li>
+<li>
+<p>In a smart city, sensors can be used to:<br/>
+    a) Measure heart rate<br/>
+    b) Monitor air quality<br/>
+    c) Perform surgery<br/>
+    d) Manage social media accounts  </p>
+</li>
+<li>
+<p>What is one example of e-commerce?<br/>
+    a) Streaming a video<br/>
+    b) Shopping on Amazon<br/>
+    c) Playing an online game<br/>
+    d) Sending an email  </p>
+</li>
+<li>
+<p>Which of the following technologies powers cryptocurrencies like Bitcoin?<br/>
+     a) Big Data<br/>
+     b) Blockchain<br/>
+     c) Cloud Computing<br/>
+     d) 5G  </p>
+</li>
+</ol>
+<hr/>
+<h2 id="answers"><strong>Answers:</strong></h2>
+<ol>
+<li>b) The simulation of human intelligence by machines</li>
+<li>True</li>
+<li>d) Microwave oven</li>
+<li>c) Natural Language Processing</li>
+<li>b) Securely record transactions</li>
+<li>True</li>
+<li>b) Renting virtual servers</li>
+<li>b) Monitor air quality</li>
+<li>b) Shopping on Amazon</li>
+<li>b) Blockchain</li>
+</ol>
+<hr/>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was just okay" data-md-value="3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8m-3.5-9A1.5 1.5 0 0 1 7 9.5 1.5 1.5 0 0 1 8.5 8 1.5 1.5 0 0 1 10 9.5 1.5 1.5 0 0 1 8.5 11M17 9.5a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 14 9.5 1.5 1.5 0 0 1 15.5 8 1.5 1.5 0 0 1 17 9.5M16 14v2H8v-2z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="3" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="5" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Anshul Yadav
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/deepsai8" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/deepaksingh8819" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "search.share", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="../../javascripts/feedback.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
