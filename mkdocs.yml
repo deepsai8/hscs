@@ -1,8 +1,8 @@
-site_name: High School Python
-site_description: A Space to learn Python in byte-sized lessons for high-school students
+site_name: High School Computer Science
+site_description: A Space to learn Computer Science in byte-sized lessons for high-school students
 site_author: Anshul Yadav
-site_url: https://deepsai8.github.io/high-school-python
-repo_url: https://github.com/deepsai8/high-school-python
+site_url: https://deepsai8.github.io/hscs
+repo_url: https://github.com/deepsai8/hscs
 
 copyright: "Copyright &copy; 2024 Anshul Yadav"
 
