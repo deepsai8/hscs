@@ -1,6 +1,6 @@
-# Welcome to High School Python
+# Welcome to High School Computer Science
 
-Here you'll learn all about Python in crisp and byte-sized lessons in a practical manner [https://deepsai8.github.io/high-school-python/](https://deepsai8.github.io/high-school-python/).
+Here you'll learn all about Computer Science in crisp and byte-sized lessons in a practical manner [https://deepsai8.github.io/hscs/](https://deepsai8.github.io/hscs/).
 
 
 

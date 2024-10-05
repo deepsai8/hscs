@@ -1,12 +1,11 @@
-# हाई स्कूल पायथन में आपका स्वागत है
+# हाई स्कूल कंप्यूटर साइंस में आपका स्वागत है
 
-यहाँ आप पायथन के बारे में सब कुछ त्वरित और छोटे-छोटे पाठों में व्यावहारिक तरीके से सीखेंगे [https://deepsai8.github.io/high-school-python/](https://deepsai8.github.io/high-school-python/)।
+यहाँ आप कंप्यूटर साइंस के बारे में संक्षिप्त और व्यावहारिक पाठों में सब कुछ सीखेंगे [https://deepsai8.github.io/hscs/](https://deepsai8.github.io/hscs/)।
 
 ## लिंक
 
-[![Colab में खोलें](https://colab.research.google.com/assets/colab-badge.svg)]()
-[![Binder में खोलें](https://mybinder.org/badge_logo.svg)]()
-[![Studio Lab में खोलें](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+[![Open in Binder](https://mybinder.org/badge_logo.svg)]()
+[![Open In Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws)
 
-
-### हम चीजों को जितना संभव हो उतना सहज बनाने की कोशिश करेंगे!
+### हम चीज़ों को जितना संभव हो उतना सहज बनाने की कोशिश करेंगे!
